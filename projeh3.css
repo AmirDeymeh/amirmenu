@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Roboto;
+    background-color: rgb(56, 53, 53);
+    color: rgb(129, 125, 125);
+    overflow-x: hidden;
+    margin: 0;
+}
+.conter{
+    background-color: white;
+    transform-origin:top left;
+    transition:all 0.5s linear;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 50px;
+    max-width: 1000px;
+}
+.conter.new{
+    transform: rotate(-20deg);
+}
+.conter.new .clea{
+    transform: rotate(-70deg);
+}
+.clea-conter{
+    position: fixed;
+    top: -75px;
+    left: -75px;
+}
+.clea{
+    height: 150px;
+    width: 150px;
+    background-color: rgb(255, 115, 0);
+    border-radius: 50%;
+    position: relative;
+    transition:  transform 0.5s linear ;
+}
+#open{
+    position: absolute;
+    cursor: pointer;
+    top: 43%;
+    left: 59%;
+    height: 100px;
+    background: transparent;
+    border: 0;
+    font-size: 26px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+#clos{
+    position: absolute;
+    cursor: pointer;
+    top: 50%;
+    left: 60%;
+    height: 100px;
+    background: transparent;
+    border: 0;
+    font-size: 26px;
+    transform: rotate(90deg);
+    transform-origin:top left;
+}
+.cont.new+nav li{
+    transform: translateX(-200);
+    transition-delay: 0.3s;
+}
+nav{
+    position: fixed;
+    bottom: 40px;
+    left: 0;
+    z-index: -1;
+}
+nav ul{
+    list-style: none;
+    padding-left: 30px;
+    color:white;
+}
+nav ul li{
+    text-transform: uppercase;
+    font-size: 14px;
+    margin: 40px 0px;
+    transform: translateX(50%); 
+    transition:transform 0.4s ease-in ;
+}
+nav ul li+li{
+    margin-left: 15px;
+    transform: translateX(65%);
+}
+nav ul li+li+li{
+    margin-left: 30px;
+    transform: translateX(85%);
+}
+
+#mard{
+    width: 100%;
+}
+h1{
+    margin: 0;
+}
+small{
+    color: #555;
+    font-style: italic;
+}
+p{
+    line-height: 1;
+    color: #444;
+}
